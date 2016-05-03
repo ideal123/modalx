@@ -48,7 +48,7 @@ cancel button's value, default: cancel
 show modal
 
 ### `` hide(callback) ``
-hide modal`
+hide modal
 
-### `` destroy ``
+### `` destroy() ``
 remove modal element
