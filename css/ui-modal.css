@@ -1,0 +1,90 @@
+.modal-cover {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1010;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+.modal-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1012;
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    border: 1px solid#ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    background: white;
+    
+}
+.modal-popup .modal-header {
+    border-bottom: 1px solid #ccc;
+    font-family: Helvetica, arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+.modal-popup .modal-title {
+    margin: 0;
+    padding: 14px 20px;
+    overflow: hidden;
+}
+.modal-popup .modal-close {
+    position: relative;
+    top: 0;
+    right: 0;
+    float: right;
+    padding: 14px 20px;
+    color: #bcbcbc;
+    cursor: pointer;
+}
+.modal-popup .modal-close:hover { 
+    color: #666
+}
+.modal-popup .modal-body {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 59px;
+    padding: 10px 20px;
+    overflow: auto;
+}
+.modal-popup .modal-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;     
+    padding: 14px;
+    text-align: right;
+}
+.modal-footer button {
+    display: inline-block;
+    margin-right: 7px;
+    padding: 9px 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.modal-footer button:hover {
+    background: #eee;     
+}
+.modal-footer button:active {
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.1);
+    background: #ccc; 
+}
+/*.modal-footer button:focus {
+    background: #ddd; 
+}*/
