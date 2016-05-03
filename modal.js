@@ -156,10 +156,10 @@ var modalx = (function() {
    *  @param {string} options.width modal宽度
    *  @param {string} options.height modal高度
    *  @param {bool} options.quickClose 点击空白快速关闭
-   *  @param {bool} options.ok 确认按钮callback，设置false隐藏按钮
-   *  @param {bool} options.okValue 确认按钮显示文本
-   *  @param {bool} options.cancel 取消按钮callback，设置false隐藏按钮
-   *  @param {bool} options.cancelValue 取消按钮显示文本
+   *  @param {object} options.ok 确认按钮callback，设置false隐藏按钮
+   *  @param {string} options.okValue 确认按钮显示文本
+   *  @param {object} options.cancel 取消按钮callback，设置false隐藏按钮
+   *  @param {string} options.cancelValue 取消按钮显示文本
    */ 
   function init(options) {
     options = options || {};
