@@ -51,5 +51,5 @@ there is a shade when covered is true.
 ### `` hide(callback) ``
 hide modal
 
-### `` destroy ``
+### `` destroy() ``
 remove modal element
