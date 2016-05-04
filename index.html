@@ -7,41 +7,47 @@
     * {
       margin: 0;
       padding: 0;
-    }   
+    }
+    .main {
+      margin: 0 auto;
+      padding-top: 50px;
+      width: 900px;
+    }
+    .button-area {
+      padding: 20px 0;
+    }
   </style>
   <link rel="stylesheet" href="./ui-modal.css">
   <script src="./modal.js"></script> 
 </head>
 <body>
- <h1>模态对话框</h1>
- <button id="show">显示对话框</button>
- <button id="hide">隐藏对话框</button>
- <button id="destroy">销毁对话框</button>
+  <div class="main">
+    <h1>Hello modalx</h1>
+    <div class="button-area">
+      <button id="show">show modal</button>
+      <button id="hide">hide modal</button>
+      <button id="destroy">destory element</button>
+    </div>
+  </div>
  
  <script>
-   var button1 = document.querySelector('#show');
-   var button2 = document.querySelector('#hide');
-   var button3 = document.querySelector('#destroy');
-   var str = '';
-   var m = modalx({
-     title: 'Hello modalx',
-     content: '<input type="text"/><div><br /><div>经典的网页对话框组件，内外皆用心雕琢。<div>',
-     width: '500px',
-     height: '400px',
-     okValue: '确认',
-     ok: function() {alert('click ok'); return false},
-     cancelValue: '取消',
-     quickClose: true
-    });
-   button1.onclick = function() {
-     m.show(false);
-   };
-   button2.onclick = function() {
-     m.hide();
-   };
-   button3.onclick = function() {
-     m.destroy();
-   };
- </script>
+  var button1 = document.querySelector('#show');
+  var button2 = document.querySelector('#hide');
+  var button3 = document.querySelector('#destroy');
+  var str = '';
+  var m = modalx({
+    title: 'Hello modalx',
+    content: 'Here is content',
+  });
+  button1.onclick = function() {
+    m.show();
+  };
+  button2.onclick = function() {
+    m.hide();
+  };
+  button3.onclick = function() {
+    m.destroy();
+  };
+</script>
 </body>
 </html>

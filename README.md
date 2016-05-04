@@ -46,9 +46,10 @@ cancel button's value, default: cancel
 
 ### `` show(covered, callback) ``
 show modal
+there is a shade when covered is true. 
 
 ### `` hide(callback) ``
-hide modal`
+hide modal
 
 ### `` destroy ``
 remove modal element
